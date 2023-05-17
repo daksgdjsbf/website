@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            width: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+           
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        footer{
+            text-align: center;
+            background-color:red;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+        }
+
+        .form-control:focus {
+            border-color: #51be78;
+            box-shadow: 0px 0px 5px rgba(81, 190, 120, 0.5);
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                max-width: 100%;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="navbar-brand" href="#">
+            <img
+              src="tgdd.jpg" alt="" width="20px" height="10px">
+          </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="nhiusp.html">Sản phẩm</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="login.html">Đăng nhập/Đăng kí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
+                    aria-controls="login" aria-selected="true">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab"
+                    aria-controls="register" aria-selected="false">Đăng ký</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" class="form-control" id="login-email" name="email" required>
+                        <div class="invalid-feedback error-message">Vui lòng nhập địa chỉ email hợp lệ.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mật khẩu</label>
+                        <input type="password" class="form-control" id="login-password" name="password" required>
+                        <div class="invalid-feedback error-message">Vui lòng nhập mật khẩu của bạn.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" class="form-control" id="register-email" name="email" required>
+                        <div class="invalid-feedback error-message">Vui lòng nhập địa chỉ email hợp lệ.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Mật khẩu</label>
+                        <input type="password" class="form-control" id="register-password" name="password" required>
+                        <div class="invalid-feedback error-message">Vui lòng nhập mật khẩu của bạn.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Nhập lại mật khẩu</label>
+                        <input type="password" class="form-control" id="register-confirm-password"
+                            name="confirmPassword" required>
+                        <div class="invalid-feedback error-message">Vui lòng nhập lại mật khẩu của bạn.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <p>Địa Chỉ: 140 Lê Trọng Tấn, phường Tây Thạnh, Quận Tân Phú.</p>
+        <p>Email: <a href="phanconghuy2003@gmail.com">phanconghuy2003@gmail.com</a></p>
+        <p>Số điện thoại: 0123456789</p>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Login Form Validation
+        $('#login-form').on('submit', function (event) {
+            event.preventDefault();
+            var form = $(this)[0];
+            if (form.checkValidity() === false) {
+                event.stopPropagation();
+            } else {
+                // Perform Login Here
+                alert('Đăng nhập thành công!');
+            }
+            form.classList.add('was-validated');
+        });
+
+        // Register Form Validation
+        $('#register-form').on('submit', function (event) {
+            event.preventDefault();
+            var form = $(this)[0];
+            if (form.checkValidity() === false) {
+                event.stopPropagation();
+            } else {
+                // Perform Register Here
+                alert('Đăng ký thành công!');
+            }
+            form.classList.add('was-validated');
+        });
+    </script> 

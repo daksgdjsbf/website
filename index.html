@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang web bán điện thoại</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            width: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+           
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #eee;
+        }
+
+        footer{
+            text-align: center;
+            background-color:red;
+        }
+        .card-text{
+            padding: 0,1%;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <a class="navbar-brand" href="#">
+            <img
+              src="tgdd.jpg" alt="" width="20px" height="10px">
+          </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="nhiusp.html">Sản phẩm</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="login.html">Đăng nhập/Đăng kí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slide1.jpg" class="d-block w-100" alt="..."   style="width: 50%; height:400px">
+            </div>
+            <div class="carousel-item">
+                <img src="slide2.jpg" class="d-block w-100" alt="..." style="width: 50%; height:400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="slide3.jpg" class="d-block w-100" alt="..." style="width: 50%; height:400px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <h3 id="tuade" style="color:dimgray;">CÁC DÒNG SẢN PHẨM BÁN CHẠY</h3>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="hi.jpg" alt="Card image cap" width="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">IPhone 13</h5>
+                        <p class="card-text">Màn hình Dynamic Island - Sự biến mất của   màn hình tai thỏ thay thế bằng thiết kế viên thuốc, OLED 6,7 inch, hỗ trợ always-on display</p>
+                        <p class="card-text">Cấu hình iPhone 14 Pro Max mạnh mẽ, hiệu năng cực khủng từ chipset A16 Bionic</p>
+                        <p class="card-text">Làm chủ công nghệ nhiếp ảnh - Camera sau 48MP,cảm biến TOF sống động Pin liền lithium-ion cùng công nghệ sạc nhanh cải tiến</p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <a href="chaytest+chitiet.html" class="btn btn-primary">Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="sss21.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung-S22-Ultra</h5>
+                        <p class="card-text">Vi xử lý mạnh mẽ nhất Galaxy - Snapdragon 8 Gen 1 (4 nm)</p>
+                        <p class="card-text">Camera mắt thần bóng đêm Nightography - Chụp đêm cực đỉnh</p>
+                        <p class="card-text">S Pen đầu tiên trên Galaxy S - Độ trễ thấp, dễ thao tác</p>
+                        <p class="card-text">Dung lượng pin bất chấp ngày đêm - Viên pin 5000mAh, sạc nhanh 45W</p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <a href="chaytest+chitiet.html" class="btn btn-primary">Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="ss21.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung-S21-Ultra</h5>
+                        <p class="card-text">Vi xử lý mạnh mẽ nhất Galaxy - Snapdragon 8 Gen 1 (4 nm)</p>
+                        <p class="card-text">Camera mắt thần bóng đêm Nightography - Chụp đêm cực đỉnh</p>
+                        <p class="card-text">S Pen đầu tiên trên Galaxy S - Độ trễ thấp, dễ thao tác</p>
+                        <p class="card-text">Dung lượng pin bất chấp ngày đêm - Viên pin 5000mAh, sạc nhanh 45W</p>
+                        <a href="#" class="btn btn-primary" id="buy-button">Mua ngay</a>
+                        <a href="chaytest+chitiet.html" class="btn btn-primary">Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <p></p>
+        <p>Địa Chỉ: 140 Lê Trọng Tấn, phường Tây Thạnh, Quận Tân Phú.</p>
+        <p>Email: <a href="phanconghuy2003@gmail.com">phanconghuy2003@gmail.com</a></p>
+        <p>Số điện thoại: 0123456789</p>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+</body>
+
+</html>
